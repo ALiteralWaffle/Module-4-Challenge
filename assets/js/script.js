@@ -1,25 +1,27 @@
 // Variables for HTML
-var quizBeginning = $('quiz-open');
-var quizMain = $('quiz');
-var startQuiz = $('quiz-start');
+var quizBeginning = document.getElementById('quiz-open');
+var quizMain = document.getElementById('quiz');
+var startQuiz = document.getElementById('quiz-start');
 var quizTimer = document.getElementById('timer');
-var quizEnd = $('quiz-end');
-var finalScore = $('final-score');
-var scoreInputName = $('name-submission');
-var scoreSubmit = $('submit-score');
-var restart = $('restart');
-var playAgain = $('playAgain');
-var buttonA = $('button-a');
-var buttonB = $('button-b');
-var buttonC = $('button-c');
-var buttonD = $('button-d');
+var quizEnd = document.getElementById('quiz-end');
+var finalScore = document.getElementById('final-score');
+var scoreInputName = document.getElementById('name-submission');
+var scoreSubmit = document.getElementById('submit-score');
+var restart = document.getElementById('restart');
+var playAgain = document.getElementById('playAgain');
+var buttonA = document.getElementById('button-a');
+var buttonB = document.getElementById('button-b');
+var buttonC = document.getElementById('button-c');
+var buttonD = document.getElementById('button-d');
 
 // General variables
 var timerInterval
 var timeLeft = 80;
 var score = 0;
 
-function startQuiz(){
+function startQuiz() {
+    quizBeginning.style.display = 'none';
+    quizEnd.style.display = 'none';
 // Timer functionality
     timerInterval = setInterval(function() {
         timeLeft--;
