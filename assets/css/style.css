@@ -1,7 +1,21 @@
-#quiz-start {
+button {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(129, 201, 206);
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+#quiz-open {
     text-align: center;
 }
 
 #timer {
     text-align: right;
+    margin-right: 20px;
+    font-size: 30px;
 }
