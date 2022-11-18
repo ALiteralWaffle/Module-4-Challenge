@@ -22,12 +22,13 @@ var score = 0;
 function startQuiz() {
     quizBeginning.style.display = 'none';
     quizEnd.style.display = 'none';
-// Timer functionality
-    timerInterval = setInterval(function() {
-        timeLeft--;
-        quizTimer.textContent = "Time left: " + timeLeft;
-    });
 }
+// Timer functionality
+timerInterval = setInterval(function() {
+    timeLeft--
+    quizTimer.textContent = "Time left: " + timeLeft;
+}, 1000);
+
 
 // Restarts Quiz
 function replayQuiz() {
