@@ -1,7 +1,7 @@
 // Variables for HTML
 var quizBeginning = document.getElementById('quiz-open');
 var quizMain = document.getElementById('quiz');
-var startQuiz = document.getElementById('quiz-start');
+var startQuizButton = document.getElementById('quiz-start');
 var quizTimer = document.getElementById('timer');
 var quizEnd = document.getElementById('quiz-end');
 var finalScore = document.getElementById('final-score');
@@ -22,13 +22,12 @@ var score = 0;
 function startQuiz() {
     quizBeginning.style.display = 'none';
     quizEnd.style.display = 'none';
-}
 // Timer functionality
-timerInterval = setInterval(function() {
-    timeLeft--
-    quizTimer.textContent = "Time left: " + timeLeft;
-}, 1000);
-
+    timerInterval = setInterval(function() {
+        timeLeft--;
+        quizTimer.textContent = "Time left: " + timeLeft;
+    }, 1000);
+}
 
 // Restarts Quiz
 function replayQuiz() {
